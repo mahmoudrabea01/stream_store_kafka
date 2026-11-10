@@ -1,0 +1,19 @@
+[project]
+name = "stream-store-kafka"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mahmoud rabea", email = "mahmoudrabea01@github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "confluent-kafka>=2.16.1",
+]
+
+[project.scripts]
+stream-store-kafka = "stream_store_kafka:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
